@@ -1,6 +1,11 @@
 # Status Writer
 Utility pkg that helps get the status code from the response writer
 
+## Install
+```
+go get github.com/joegasewicz/status-write
+```
+
 ## Setup
 Example shows setup for a middleware function. This could be a logging 
 function or similar whereby you require access to the status code from
