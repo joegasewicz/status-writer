@@ -20,7 +20,7 @@ func MyMiddleware(h http.HandleFunc) http.HandlerFunc {
 }
 ```
 
-### Usages
+### Usage
 Now you can set the status code as usaul via the response writer in your 
 handlers
 ```go
