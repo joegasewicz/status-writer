@@ -14,7 +14,7 @@ function or similar whereby you require access to the status code from
 func MyMiddleware(h http.HandleFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
         sw := status_writer.New(w) // Here we override http.ResponseWriter's `WriteHeader` function
-		h(sw, r)
+	h(sw, r)
         statusCode := sw.Status // Now work with the status code
     }	
 }
