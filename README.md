@@ -19,3 +19,12 @@ func MyMiddleware(h http.HandleFunc) http.HandlerFunc {
     }	
 }
 ```
+
+### Usages
+Now you can set the status code as usaul via the response writer in your 
+handlers
+```go
+func (n *Notice) Get(w http.ResponseWriter, request *http.Request) {
+	w.WriteHeader(http.StatusAccepted)
+}
+```
