@@ -3,7 +3,7 @@ Utility pkg that helps get the status code from the response writer
 
 ## Install
 ```
-go get github.com/joegasewicz/status-write
+go get github.com/joegasewicz/status-writer
 ```
 
 ## Setup
